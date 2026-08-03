@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>衣博士龜山十巷店｜24小時自助洗衣</title>
+  <meta name="description" content="衣博士龜山十巷店，24小時自助投幣洗衣，特大／大型／中型洗衣機與烘衣機一應俱全，免費提供洗衣籃、洗衣精與柔軟精。">
+  <link rel="icon" href="images/logo_01.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>
+        <a class="logo-mark" href="index.html">
+          <img src="images/logo_01.png" alt="衣博士洗衣連鎖">
+          <span class="store-name">衣博士龜山十巷店<small>DR. WASHING LAUNDROMAT</small></span>
+        </a>
+      </h1>
+
+      <div class="header-actions" style="display: flex; align-items: center; gap: 15px;">
+        <select class="lang-selector" onchange="changeLanguage(this.value)" style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.3); border-radius:6px; padding:6px 10px; font-family:inherit; cursor:pointer; font-size: 0.9rem; outline: none;">
+          <option value="zh" style="color: #000;">繁體中文</option>
+          <option value="en" style="color: #000;">English</option>
+          <option value="vi" style="color: #000;">Tiếng Việt</option>
+          <option value="th" style="color: #000;">ภาษาไทย</option>
+          <option value="id" style="color: #000;">Bahasa Indonesia</option>
+        </select>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="開啟選單">☰</button>
+      </div>
+
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html" class="current" data-i18n="nav_home">首頁</a></li>
+          <li><a href="fees.html" data-i18n="nav_fees">收費標準</a></li>
+          <li><a href="VM.html" data-i18n="nav_vm">自助購買</a></li>
+          <li><a href="call_me.html" data-i18n="nav_contact">聯絡我們</a></li>
+          <li><a href="https://www.184.com.tw/" data-i18n="nav_brand">品牌介紹</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <span class="hero-eyebrow" data-i18n="hero_eyebrow">24 小時投幣式營業中</span>
+          <h2 data-i18n="hero_title">洗衣這件事，<br><em>交給機器</em>就好。</h2>
+          <p class="lead" data-i18n="hero_lead">
+            衣博士龜山十巷店提供特大型、大型、中型洗衣機與烘衣機，
+            洗衣精、柔軟精免費附贈，十個免費洗衣籃隨你分類，
+            投幣、儲值卡都能輕鬆完成一次洗衣。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="fees.html" data-i18n="btn_fees">查看收費標準</a>
+            <a class="btn btn-ghost" href="VM.html" data-i18n="btn_vm">自助購買服務</a>
+          </div>
+        </div>
+
+        <div class="porthole-wrap">
+          <div class="porthole">
+            <img src="images/洗衣區.jpg" alt="店內特大型與大型洗衣機">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="amenities_eyebrow">Store Amenities</span>
+        <h2 data-i18n="amenities_title">店內設備，一次到位</h2>
+        <p data-i18n="amenities_desc">從分類、洗滌到付款，我們把每個環節都替你準備好了。</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon">🧺</div>
+          <h3 data-i18n="feat_basket">免費洗衣籃</h3>
+          <p data-i18n="feat_basket_desc">店內附設十個免費洗衣籃，方便分類衣物。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🧴</div>
+          <h3 data-i18n="feat_liquid">洗衣精・柔軟精</h3>
+          <p data-i18n="feat_liquid_desc">洗衣機免費提供洗衣精與柔軟精，衣物潔淨柔軟。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🛍️</div>
+          <h3 data-i18n="feat_vending">自助販賣機</h3>
+          <p data-i18n="feat_vending_desc">現場販售塑膠袋與靜電紙，隨用隨買。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">💰</div>
+          <h3 data-i18n="feat_coin">兌幣機</h3>
+          <p data-i18n="feat_coin_desc">限使用 100 元紙鈔兌幣，免帶滿口零錢。</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">💳</div>
+          <h3 data-i18n="feat_card">儲值卡服務</h3>
+          <p data-i18n="feat_card_desc">提供儲值卡購買，洗衣流程更輕鬆順手。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-band">
+      <div class="gallery-inner">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="gallery_eyebrow">Inside The Store</span>
+          <h2 data-i18n="gallery_title">門市實景一覽</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <div class="frame"><img src="images/店門1.jpg" alt="門市店門口"></div>
+            <span data-i18n="gallery_door">店門口</span>
+          </div>
+          <div class="gallery-item">
+            <div class="frame"><img src="images/烘衣區.jpg" alt="烘衣機區"></div>
+            <span data-i18n="gallery_dryer">烘衣區</span>
+          </div>
+          <div class="gallery-item">
+            <div class="frame"><img src="images/洗衣籃.jpg" alt="免費洗衣籃"></div>
+            <span data-i18n="gallery_basket">免費洗衣籃</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p data-i18n="footer_copy">Copyright © 2025 <strong>衣博士龜山十巷店</strong> All rights reserved.油曹祖睿開發</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-menu');
+      const btn = document.querySelector('.menu-toggle');
+      nav.classList.toggle('active');
+      btn.textContent = nav.classList.contains('active') ? '✖' : '☰';
+    }
+  </script>
+  <script src="i18n.js"></script>
+</body>
+</html>

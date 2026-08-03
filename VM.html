@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自助購買｜衣博士龜山十巷店</title>
+  <link rel="icon" href="images/logo_01.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>
+        <a class="logo-mark" href="index.html">
+          <img src="images/logo_01.png" alt="衣博士洗衣連鎖">
+          <span class="store-name">衣博士龜山十巷店<small>DR. WASHING LAUNDROMAT</small></span>
+        </a>
+      </h1>
+
+      <div class="header-actions" style="display: flex; align-items: center; gap: 15px;">
+        <select class="lang-selector" onchange="changeLanguage(this.value)" style="background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.3); border-radius:6px; padding:6px 10px; font-family:inherit; cursor:pointer; font-size: 0.9rem; outline: none;">
+          <option value="zh" style="color: #000;">繁體中文</option>
+          <option value="en" style="color: #000;">English</option>
+          <option value="vi" style="color: #000;">Tiếng Việt</option>
+          <option value="th" style="color: #000;">ภาษาไทย</option>
+          <option value="id" style="color: #000;">Bahasa Indonesia</option>
+        </select>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="開啟選單">☰</button>
+      </div>
+
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">首頁</a></li>
+          <li><a href="fees.html" data-i18n="nav_fees">收費標準</a></li>
+          <li><a href="VM.html" class="current" data-i18n="nav_vm">自助購買</a></li>
+          <li><a href="call_me.html" data-i18n="nav_contact">聯絡我們</a></li>
+          <li><a href="https://www.184.com.tw/" data-i18n="nav_brand">品牌介紹</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-head">
+        <span class="eyebrow">Vending Machine</span>
+        <h2 data-i18n="vm_title">自助購買服務</h2>
+        <p data-i18n="vm_desc">忘了帶洗衣袋或靜電紙也沒關係，店內販賣機現金付款即可購買。</p>
+      </div>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="shot"><img src="images/洗衣袋外盒.jpg" alt="塑膠袋商品"></div>
+          <div class="info">
+            <div>
+              <h3 data-i18n="vm_bag">塑膠袋</h3>
+              <span class="tag" data-i18n="vm_bag_tag">單一尺寸</span>
+            </div>
+            <span class="price-tag">$20</span>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="shot"><img src="images/靜電紙外盒.jpg" alt="靜電紙商品"></div>
+          <div class="info">
+            <div>
+              <h3 data-i18n="vm_sheet">靜電紙</h3>
+              <span class="tag" data-i18n="vm_sheet_tag">烘衣防靜電</span>
+            </div>
+            <span class="price-tag">$10</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="vm-note" data-i18n="vm_note1">操作方式簡單，現金付款即可完成購買。</p>
+      <p class="note-line" data-i18n="vm_note2">※商品價格如有變動，以現場為準※</p>
+    </section>
+  </main>
+
+  <footer>
+    <p data-i18n="footer_copy">Copyright © 2025 <strong>衣博士龜山十巷店</strong> All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-menu');
+      const btn = document.querySelector('.menu-toggle');
+      nav.classList.toggle('active');
+      btn.textContent = nav.classList.contains('active') ? '✖' : '☰';
+    }
+  </script>
+  <script src="i18n.js"></script>
+</body>
+</html>
