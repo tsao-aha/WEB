@@ -664,3 +664,10 @@ footer strong { color: #fff; }
     gap: 8px;
   }
 }
+
+/* Hide logo image on mobile to prevent overlapping with text */
+@media (max-width: 720px) {
+  .logo-mark img {
+    display: none;
+  }
+}
